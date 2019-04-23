@@ -30,5 +30,10 @@
             return (((int)vector >> 4) & 0b11) - 1;
         }
 
+        public Vector Wrap(int bounds)
+        {
+            return new Vector((x + bounds) % bounds, (y + bounds) % bounds, (z + bounds) % bounds);
+        }
+
     }
 }
