@@ -51,6 +51,31 @@ namespace Poly
 
                     return true;
                 }
+                // end of a chain
+                else if (chosenVacancy % chainSize == (chainSize - 1))
+                {
+                    var startOfChain = chosenVacancy - chainSize + 1;
+                    Array.Copy(occupancies, startOfChain + 1, updatedPositions, 0, chainSize - 1);
+
+                    updatedPositions[chainSize - 1] = randomlySelectedNeighbour;
+
+                    int vacatedIndex = startOfChain;
+
+                    Vector vacatedPosition = occupancies[vacatedIndex]; // the position of the first element is vacated
+
+                    Array.Copy(updatedPositions, 0, occupancies, startOfChain, chainSize);
+
+                    var thisChainOccupancyType = OccupancyTypeOfChain(currentChain);
+
+                    foreach (var vector in updatedPositions)
+                    {
+                        lattice[vector.x, vector.y, vector.z] = thisChainOccupancyType;
+                    }
+
+                    lattice[vacatedPosition.x, vacatedPosition.y, vacatedPosition.z] = OccupationType.Empty;
+
+                    return true;
+                }
             }
 
             return false;

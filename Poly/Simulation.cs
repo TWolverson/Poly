@@ -69,21 +69,26 @@ namespace Poly
 
                 var randomSite = randomVacancySelector.Next(0, numChains * chainSize);
 
-                switch (randomSite % chainSize)
-                {
-                    case 0:
-                        // this is the start of a chain, i.e. the index is a whole number of chain sizes
-                        if (TrySnake(randomSite)) numberOfAdjustments++;
-                        break;
-                    case 1:
-                        // this is the end of a chain, i.e. the index is displaced once from a whole number of chain sizes 
-                        if (TrySnake(randomSite)) numberOfAdjustments++;
-                        break;
-                    default:
-                        // the index is in the middle of a chain
-                        Crank();
-                        break;
+                //switch (randomSite % chainSize)
+                //{
+                //    case 0:
+                //        this is the start of a chain, i.e.the index is a whole number of chain sizes
+                //        if (TrySnake(randomSite)) numberOfAdjustments++;
+                //        break;
+                //    case (chainSize - 1):
+                //        this is the end of a chain, i.e.the index is displaced once from a whole number of chain sizes
+                //        if (TrySnake(randomSite)) numberOfAdjustments++;
+                //        break;
+                //    default:
+                //        the index is in the middle of a chain
+                //        Crank();
+                //        break;
 
+                //}
+
+                if (randomSite % chainSize == 0 | randomSite % chainSize == (chainSize - 1))
+                {
+                    if (TrySnake(randomSite)) numberOfAdjustments++;
                 }
 
                 if ((numberOfAdjustments + 1) % 1000000 == 0)
