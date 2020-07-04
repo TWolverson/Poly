@@ -1,6 +1,6 @@
 ﻿namespace Poly
 {
-    struct Vector
+    public struct Vector
     {
         public Vector(int x, int y, int z)
         {

@@ -30,7 +30,7 @@ namespace Poly
 
     class Program
     {
-        static decimal fillFactor = 0.5M;
+        static decimal fillFactor = 0.75M;
         static int chainSize = 12;
         static int cellSize = 100;
 

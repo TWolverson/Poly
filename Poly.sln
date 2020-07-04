@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2000
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poly", "Poly\Poly.csproj", "{79D32DF8-CBFB-4B3A-965B-93BCB05C35BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poly.Tests", "Poly.Tests\Poly.Tests.csproj", "{981BA48A-1B57-4595-9DDE-E666738FC179}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{79D32DF8-CBFB-4B3A-965B-93BCB05C35BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79D32DF8-CBFB-4B3A-965B-93BCB05C35BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79D32DF8-CBFB-4B3A-965B-93BCB05C35BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{981BA48A-1B57-4595-9DDE-E666738FC179}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{981BA48A-1B57-4595-9DDE-E666738FC179}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{981BA48A-1B57-4595-9DDE-E666738FC179}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{981BA48A-1B57-4595-9DDE-E666738FC179}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

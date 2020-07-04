@@ -1,6 +1,6 @@
 ﻿namespace Poly
 {
-    enum LatticeVector
+    public enum LatticeVector
     {
         // lower plane x,y,-1
         LeftZeroDown = X.Left | Y.Zero | Z.Down,

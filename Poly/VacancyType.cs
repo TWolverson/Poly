@@ -1,6 +1,6 @@
 ﻿namespace Poly
 {
-    enum VacancyType
+    enum OccupationType
     {
         A = -1,
         Empty = 0,
