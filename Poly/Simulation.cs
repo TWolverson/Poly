@@ -54,6 +54,8 @@ namespace Poly
             occupancies = PopulateOccupanciesPlanar(randomVacancySelector, chainSize, numChains);
             //occupancies = PopulateOccupanciesRandom(randomVacancySelector, chainSize, numChains);
 
+            RenderLayerToConsole();
+
             ValidateChainIntegrity();
 
             var totalEntropy = CountEntropy();

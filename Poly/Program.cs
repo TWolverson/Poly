@@ -37,7 +37,7 @@ namespace Poly
         static void Main(string[] args)
         {
             //Parallel.For(10, 20, (x) => { new Simulation(cellSize, x, fillFactor).Run(); });
-            new Simulation(100, 12, 0.5M).Run();
+            new Simulation(100, 48, 0.8M).Run();
         }
     }
 }

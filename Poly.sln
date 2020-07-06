@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poly", "Poly\Poly.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poly.Tests", "Poly.Tests\Poly.Tests.csproj", "{981BA48A-1B57-4595-9DDE-E666738FC179}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poly.Visualiser", "Poly.Visualiser\Poly.Visualiser.csproj", "{D09DD78F-F077-42A9-B8E0-BAEF8D545E72}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{981BA48A-1B57-4595-9DDE-E666738FC179}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{981BA48A-1B57-4595-9DDE-E666738FC179}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{981BA48A-1B57-4595-9DDE-E666738FC179}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D09DD78F-F077-42A9-B8E0-BAEF8D545E72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D09DD78F-F077-42A9-B8E0-BAEF8D545E72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D09DD78F-F077-42A9-B8E0-BAEF8D545E72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D09DD78F-F077-42A9-B8E0-BAEF8D545E72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

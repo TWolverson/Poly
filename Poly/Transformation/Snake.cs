@@ -75,6 +75,7 @@ namespace Poly
                     lattice[vacatedPosition.x, vacatedPosition.y, vacatedPosition.z] = OccupationType.Empty;
 
                     return true;
+
                 }
             }
 
