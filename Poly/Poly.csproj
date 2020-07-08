@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Initialisation\File.cs" />
     <Compile Include="Initialisation\Planar.cs" />
     <Compile Include="Initialisation\Random.cs" />
     <Compile Include="LatticeVector.cs" />

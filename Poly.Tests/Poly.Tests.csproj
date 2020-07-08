@@ -17,4 +17,10 @@
     <ProjectReference Include="..\Poly\Poly.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Data\occupanciesbinary_637297463816335541_100_48_0.8">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

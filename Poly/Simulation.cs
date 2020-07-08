@@ -17,11 +17,11 @@ namespace Poly
             this.fillFactor = fillFactor;
         }
 
-        private readonly decimal fillFactor;
+        private decimal fillFactor;
 
-        private readonly int chainSize;
+        private int chainSize;
 
-        private readonly int cellSize;
+        private int cellSize;
 
         int numChains;
 
@@ -44,15 +44,16 @@ namespace Poly
 
         public void Run()
         {
-            var totalVacancies = cellSize * cellSize * cellSize / 2; // only half the number of cubic cells are occupiable
-            numChains = (int)(totalVacancies * fillFactor / chainSize);
-            numChains = numChains - numChains % 2; // must be even as we want equal distribution of As and Bs
-            Console.WriteLine($"Fill factor: {fillFactor} Computed fill factor: {(double)numChains * chainSize / totalVacancies} Chain size: {chainSize} Computed number of chains: {numChains}");
+            //var totalVacancies = cellSize * cellSize * cellSize / 2; // only half the number of cubic cells are occupiable
+            //numChains = (int)(totalVacancies * fillFactor / chainSize);
+            //numChains = numChains - numChains % 2; // must be even as we want equal distribution of As and Bs
+            //Console.WriteLine($"Fill factor: {fillFactor} Computed fill factor: {(double)numChains * chainSize / totalVacancies} Chain size: {chainSize} Computed number of chains: {numChains}");
 
-            lattice = new OccupationType[cellSize, cellSize, cellSize];
+            //lattice = new OccupationType[cellSize, cellSize, cellSize];
 
-            occupancies = PopulateOccupanciesPlanar(randomVacancySelector, chainSize, numChains);
+            //occupancies = PopulateOccupanciesPlanar(randomVacancySelector, chainSize, numChains);
             //occupancies = PopulateOccupanciesRandom(randomVacancySelector, chainSize, numChains);
+            occupancies = PopulateOccupanciesFromBinaryFile("occupanciesbinary_637297463816335541_100_48_0.8");
 
             RenderLayerToConsole();
 
@@ -98,6 +99,9 @@ namespace Poly
                     numberOfAdjustments = 0;
                     RenderLayerToConsole();
                     ValidateChainIntegrity();
+
+                    //WriteOccupanciesToFile();
+                    //WriteOccupanciesToBinaryFile();
                 }
                 //kT /= 2;
                 //stop = kT <= 1;
